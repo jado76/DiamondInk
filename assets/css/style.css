@@ -1,0 +1,48 @@
+/*----------------------------------Base Html------------------------------------------*/
+a:visited{
+    color: white;
+    list-style: none;
+}
+#Accueil{
+    background-color: #2d2c2c;
+    color: white;
+}
+
+#Diamond{
+    font-size: 7em;
+    font-family: initial;
+}
+
+#MenuAccueil ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#MenuAccueil ul li{
+    border: 3px black solid;
+    width: 17%;
+    text-align: center;
+    background-color: #b33d3d;
+}
+
+#corpAccueil{
+    border: 3px black solid;
+    background-color: #b33d3d;
+    width: 83%;
+    height: 50rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 10px 10px 50px 50px rgba(0, 0, 0, 0.3) inset;
+}
+
+#PiedAccueil{
+    background-color: #b33d3d;
+    border: 3px black solid;
+    margin-top: 3%;
+    width: 83%;
+    margin-left: 10%;
+}
+
+/*----------------------------------fin Base Html------------------------------------------*/

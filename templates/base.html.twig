@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    <script src="{{ asset('build/app.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+</head>
+<body id="Accueil">
+<div class="container-fluid">
+    <header>
+        <div class="row">
+            <div class="offset-sm-2 col-sm-6"><h1 id="Diamond">Diamond-Ink</h1></div>
+            <div class="offset-sm-0 col-sm-2"><img src="images/logo2.png"></div>
+        </div>
+        <div>
+            <nav id="MenuAccueil">
+                <ul>
+                    <li><a href="/accueil">Accueil</a></li>
+                    <li><a href="/rouen">Rouen</a></li>
+                    <li><a href="/dieppe">Dieppe</a></li>
+                    <li><a href="/tatoueur">Tatoueurs</a></li>
+                    <li><a href="/contact">Contactez-Nous</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
-    </body>
+<footer id="PiedAccueil">
+    <ul>
+        <li><a href="/legale">Mention légale</a></li>
+    </ul>
+</footer>
+</div>
+</body>
 </html>

@@ -5,15 +5,15 @@ namespace App\Controller;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class AcceuilController extends Controller
+class LegaleController extends Controller
 {
     /**
-     * @Route("/acceuil", name="acceuil")
+     * @Route("/legale", name="legale")
      */
     public function index()
     {
-        return $this->render('acceuil/index.html.twig', [
-            'controller_name' => 'AcceuilController',
+        return $this->render('legale/index.html.twig', [
+            'controller_name' => 'LegaleController',
         ]);
     }
 }
